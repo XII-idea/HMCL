@@ -86,8 +86,8 @@ final class ComponentSublistWrapper extends VBox implements NoPaddingComponent {
 
                     InvalidationListener updateArc = o -> {
                         if (ComponentSublistWrapper.this.getPseudoClassStates().contains(last)) {
-                            rectangle.setArcHeight(4);
-                            rectangle.setArcWidth(4);
+                            rectangle.setArcHeight(16);
+                            rectangle.setArcWidth(16);
                         } else {
                             rectangle.setArcHeight(0);
                             rectangle.setArcWidth(0);

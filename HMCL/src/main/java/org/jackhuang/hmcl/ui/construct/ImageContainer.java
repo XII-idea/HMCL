@@ -69,7 +69,7 @@ public class ImageContainer extends StackPane {
         clip.setArcHeight(radius);
     }
 
-    private static final double DEFAULT_CORNER_RADIUS = 6.0;
+    private static final double DEFAULT_CORNER_RADIUS = 16.0;
 
     private StyleableDoubleProperty cornerRadius;
 

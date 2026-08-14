@@ -28,7 +28,7 @@
 }
 
 .scroll-bar .thumb {
-    -fx-fill: -monet-surface-tint;
+    -fx-fill: -monet-on-surface-variant;
     -fx-arc-width: 6;
     -fx-arc-height: 6;
 }
@@ -294,7 +294,7 @@
 }
 
 .popup-menu .scroll-bar .thumb {
-    -fx-fill: -monet-surface-tint;
+    -fx-fill: -monet-on-surface-variant;
 }
 
 .popup-menu .scroll-pane > .scroll-bar:vertical,
@@ -309,6 +309,7 @@
 .two-line-list-item > .first-line > .title {
     -fx-text-fill: -monet-on-surface;
     -fx-font-size: 15px;
+    -fx-font-weight: MEDIUM;
     -fx-padding: 0 8 0 0;
 }
 
@@ -649,6 +650,7 @@
 
 .jfx-snackbar-content {
     -fx-background-color: -monet-inverse-surface;
+    -fx-background-radius: 16;
     -fx-padding: 5;
     -fx-spacing: 5;
 }
@@ -815,7 +817,7 @@
 
 .jfx-slider .thumb,
 .jfx-slider:focused .thumb {
-    -fx-background-color: -monet-primary;
+    -fx-background-color: -monet-on-primary;
     -fx-background-radius: 20;
     -fx-background-insets: 0;
 }
@@ -948,7 +950,7 @@
 *******************************************************************************/
 
 .jfx-text-field, .jfx-password-field, .jfx-text-area {
-    -fx-background-color: -monet-surface-container-highest;
+    -fx-background-color: -monet-secondary-container;
     -fx-background-radius: 12;
     -fx-highlight-fill: -monet-primary;
     -fx-text-fill: -monet-on-surface;
@@ -1427,7 +1429,7 @@
 }
 
 .log-window .scroll-bar .thumb {
-    -fx-fill: -monet-surface-tint;
+    -fx-fill: -monet-on-surface-variant;
 }
 
 .log-window .jfx-button {
@@ -1529,7 +1531,7 @@
 .jfx-combo-box {
     -jfx-focus-color: transparent;
     -jfx-unfocus-color: transparent;
-    -fx-background-color: -monet-surface-container-highest;
+    -fx-background-color: -monet-secondary-container;
     -fx-background-radius: 12;
     -fx-padding: 4;
     -fx-max-width: 1000000000;
@@ -1943,6 +1945,7 @@
 .tooltip {
     -fx-text-fill: -monet-inverse-on-surface;
     -fx-background-color: -monet-inverse-surface;
+    -fx-background-radius: 12;
 }
 
 .tooltip .text {

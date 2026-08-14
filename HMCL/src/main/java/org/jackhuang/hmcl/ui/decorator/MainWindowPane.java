@@ -58,7 +58,7 @@ import org.jetbrains.annotations.Nullable;
 @NotNullByDefault
 final class MainWindowPane extends StackPane {
     /// The diameter, in pixels, of the rounded window corners.
-    private static final double ARC = 8.0;
+    private static final double ARC = 16.0;
 
     /// The decorator whose state and actions are represented by this pane.
     private final Decorator decorator;
