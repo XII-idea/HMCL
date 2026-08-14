@@ -331,8 +331,8 @@
 }
 
 .two-line-list-item > .first-line .tag {
-    -fx-text-fill: -monet-on-secondary-container;
-    -fx-background-color: -monet-secondary-container;
+    -fx-text-fill: -monet-on-primary-fixed;
+    -fx-background-color: -monet-primary-fixed;
     -fx-background-radius: 8;
     -fx-padding: 2;
     -fx-font-weight: normal;
