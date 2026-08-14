@@ -50,9 +50,9 @@
 }
 
 .hint {
-    -fx-background-radius: 5;
+    -fx-background-radius: 12;
     -fx-border-width: 1;
-    -fx-border-radius: 5;
+    -fx-border-radius: 12;
     -fx-padding: 6;
 }
 
@@ -123,7 +123,7 @@
 
 .memory-status-bar .track {
     -fx-background-color: -monet-secondary-container;
-    -fx-background-radius: 2;
+    -fx-background-radius: 8;
     -fx-background-insets: 0;
 }
 
@@ -142,7 +142,7 @@
 .radio-button-title-label {
     -fx-font-size: 16px;
     -fx-padding: 14.0 0.0 -20.0 0.0;
-    -fx-text-fill: rgba(0.0, 0.0, 0.0, 0.87);
+    -fx-text-fill: -monet-on-surface;
 }
 
 .announcement {
@@ -332,7 +332,7 @@
 .two-line-list-item > .first-line .tag {
     -fx-text-fill: -monet-on-secondary-container;
     -fx-background-color: -monet-secondary-container;
-    -fx-background-radius: 2;
+    -fx-background-radius: 8;
     -fx-padding: 2;
     -fx-font-weight: normal;
     -fx-font-size: 12px;
@@ -380,7 +380,7 @@
 
 .bubble {
     -fx-background-color: -monet-inverse-surface-transparent-80;
-    -fx-background-radius: 2px;
+    -fx-background-radius: 16px;
 }
 
 .bubble > HBox > .two-line-list-item > .first-line > .title,
@@ -402,7 +402,7 @@
 
 .installer-item-wrapper {
     -fx-background-color: -monet-surface;
-    -fx-background-radius: 4;
+    -fx-background-radius: 16;
     -fx-pref-width: 180px;
 }
 
@@ -446,7 +446,7 @@
     -fx-translate-y: 1px;
     -fx-max-height: 55px;
     -fx-min-height: 55px;
-    -fx-background-color: -monet-primary-container;
+    -fx-background-color: -monet-primary;
     -fx-opacity: 1; /* Override the opacity of disabled button */
     -fx-cursor: hand;
 }
@@ -464,29 +464,29 @@
         transparent 80%, 
         transparent 100%
     );
-    -fx-background-radius: 4px 0 0 4px;
+    -fx-background-radius: 16px 0 0 16px;
 }
 
 .launch-pane > .jfx-button.menu-button {
     -fx-max-width: 27px;
     -fx-min-width: 27px;
     -fx-font-size: 15px;
-    -fx-background-radius: 0 4px 4px 0;
+    -fx-background-radius: 0 16px 16px 0;
 }
 
 .launch-pane > .jfx-button > StackPane > .jfx-rippler {
-    -jfx-rippler-fill: -monet-on-primary-container;
+    -jfx-rippler-fill: -monet-on-primary;
     -jfx-mask-type: CIRCLE;
     -fx-padding: 0;
 }
 
 .launch-pane > .jfx-button, .jfx-button * {
-    -fx-text-fill: -monet-on-primary-container;
+    -fx-text-fill: -monet-on-primary;
     -fx-font-size: 14px;
 }
 
 .launch-pane .svg {
-    -fx-fill: -monet-on-primary-container;
+    -fx-fill: -monet-on-primary;
 }
 
 /*******************************************************************************
@@ -500,7 +500,7 @@
 }
 
 .tab-selected-line {
-    -fx-background-color: derive(-monet-primary-container, -30%);
+    -fx-background-color: -monet-primary;
 }
 
 /* TODO: It seems not actually used */
@@ -537,7 +537,7 @@
 }
 
 .jfx-dialog-layout {
-    -fx-background-radius: 4px;
+    -fx-background-radius: 16px;
     -fx-padding: 24px 24px 16px 24px;
     -fx-background-color: -monet-surface-container-high;
     -fx-text-fill: -monet-on-surface;
@@ -581,7 +581,7 @@
 }
 
 .task-executor-dialog-layout {
-    -fx-background-radius: 4px;
+    -fx-background-radius: 16px;
     -fx-background-color: -monet-surface-container-high;
     -fx-text-fill: -monet-on-surface;
 }
@@ -611,7 +611,7 @@
 
 .code-box {
     -fx-background-color: -monet-surface-variant;
-    -fx-background-radius: 6;
+    -fx-background-radius: 16;
     -fx-padding: 0 10 0 10;
     -fx-alignment: center;
 }
@@ -634,7 +634,7 @@
 
 .jfx-popup-container {
     -fx-background-color: -monet-surface;
-    -fx-background-radius: 4;
+    -fx-background-radius: 16;
 }
 
 .popup-list-view {
@@ -719,7 +719,7 @@
 }
 
 .jfx-tool-bar.gray-background Label {
-    -fx-text-fill: BLACK;
+    -fx-text-fill: -monet-on-surface;
 }
 
 .jfx-tool-bar .jfx-options-burger {
@@ -758,7 +758,7 @@
     -fx-pref-height: -fx-toggle-icon4-size;
     -fx-max-height: -fx-toggle-icon4-size;
     -fx-min-height: -fx-toggle-icon4-size;
-    -fx-background-radius: 5px;
+    -fx-background-radius: 12px;
     -fx-background-color: transparent;
     -jfx-toggle-color: -monet-on-surface;
     -jfx-untoggle-color: transparent;
@@ -771,7 +771,7 @@
 
 .jfx-decorator-button {
     -fx-max-width: 40px;
-    -fx-background-radius: 5px;
+    -fx-background-radius: 12px;
     -fx-max-height: 40px;
     -fx-background-color: transparent;
 }
@@ -884,7 +884,7 @@
 .jfx-button-border {
     -fx-background-color: transparent;
     -fx-border-color: -monet-outline;
-    -fx-border-radius: 5px;
+    -fx-border-radius: 12px;
     -fx-border-width: 0.2px;
     -fx-padding: 8px;
 }
@@ -937,7 +937,7 @@
 
 .jfx-progress-bar > .track,
 .jfx-progress-bar > .bar {
-    -fx-background-radius: 2;
+    -fx-background-radius: 8;
     -fx-background-insets: 0;
 }
 
@@ -949,6 +949,7 @@
 
 .jfx-text-field, .jfx-password-field, .jfx-text-area {
     -fx-background-color: -monet-surface-container-highest;
+    -fx-background-radius: 12;
     -fx-highlight-fill: -monet-primary;
     -fx-text-fill: -monet-on-surface;
     -fx-font-weight: BOLD;
@@ -1070,7 +1071,7 @@
 
 .card {
     -fx-background-color: -monet-surface-container-low-transparent-80;
-    -fx-background-radius: 4;
+    -fx-background-radius: 16;
     -fx-padding: 8px;
 
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.26), 10, 0.12, -1, 2);
@@ -1078,14 +1079,14 @@
 
 .card-no-padding {
     -fx-background-color: -monet-surface-container-low-transparent-80;
-    -fx-background-radius: 4;
+    -fx-background-radius: 16;
 
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.26), 10, 0.12, -1, 2);
 }
 
 .card-non-transparent {
     -fx-background-color: -monet-surface-container-low;
-    -fx-background-radius: 4;
+    -fx-background-radius: 16;
     -fx-padding: 8px;
 
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.26), 5, 0.06, -0.5, 1);
@@ -1159,16 +1160,16 @@
 }
 
 .options-list-item:first {
-    -fx-background-radius: 4 4 0 0;
+    -fx-background-radius: 16 16 0 0;
     -fx-border-width: 0;
 }
 
 .options-list-item:last {
-    -fx-background-radius: 0 0 4 4;
+    -fx-background-radius: 0 0 16 16;
 }
 
 .options-list-item:first:last {
-    -fx-background-radius: 4 4 4 4;
+    -fx-background-radius: 16 16 16 16;
     -fx-border-width: 0;
 }
 
@@ -1197,7 +1198,7 @@
 .jfx-toggle-button:selected,
 .jfx-toggle-button:focused:selected {
     -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT;
-    -fx-background-radius: 3px;
+    -fx-background-radius: 12px;
     -fx-background-insets: 0px;
 
     -jfx-toggle-color: -monet-primary;
@@ -1529,6 +1530,7 @@
     -jfx-focus-color: transparent;
     -jfx-unfocus-color: transparent;
     -fx-background-color: -monet-surface-container-highest;
+    -fx-background-radius: 12;
     -fx-padding: 4;
     -fx-max-width: 1000000000;
 }
@@ -1591,7 +1593,7 @@
 .jfx-color-picker:focused,
 .jfx-color-picker {
     -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT;
-    -fx-background-radius: 3px;
+    -fx-background-radius: 12px;
     -fx-background-insets: 0px;
     -fx-min-height: 36px;
 }
@@ -1664,8 +1666,8 @@
 .table-view .filler,
 .table-view .column-header-background,
 .table-row-cell {
-    -fx-background-radius: 6;
-    -fx-border-radius: 6;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
 }
 
 .table-view .column-header,
@@ -1711,17 +1713,17 @@
 
 .tree-view {
     -fx-padding: 5;
-    -fx-background-radius: 6;
+    -fx-background-radius: 16;
     -fx-background-color: -monet-surface-container-low;
-    -fx-border-radius: 6;
+    -fx-border-radius: 16;
 }
 
 .tree-cell {
     -fx-padding: 5;
-    -fx-background-radius: 6;
+    -fx-background-radius: 16;
     -fx-background-color: transparent;
     -fx-text-fill: -monet-on-surface;
-    -fx-border-radius: 6;
+    -fx-border-radius: 16;
 }
 
 .tree-cell:focused {
@@ -1755,7 +1757,7 @@
 }
 
 .jfx-decorator-drawer {
-    -fx-background-color: rgba(244, 244, 244, 0.5);
+    -fx-background-color: -monet-surface-transparent-50;
 }
 
 .jfx-decorator-title {
@@ -1782,14 +1784,14 @@
  ******************************************************************************/
 
 .scroll-bar:vertical > .track-background, .scroll-bar:horizontal > .track-background {
-    -fx-background-color: #F1F1F1;
+    -fx-background-color: -monet-secondary-container;
     -fx-background-insets: 0.0;
 }
 
 .scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
-    -fx-background-color: #BCBCBC;
+    -fx-background-color: -monet-surface-tint;
     -fx-background-insets: 0.0;
-    -fx-background-radius: 1.0;
+    -fx-background-radius: 8.0;
 }
 
 .scroll-bar > .increment-button, .scroll-bar > .decrement-button {
@@ -2022,7 +2024,7 @@
 
 .addon-changelog {
     -fx-background-color: -monet-surface;
-    -fx-background-radius: 4;
+    -fx-background-radius: 16;
     -fx-padding: 10;
     -fx-font-size: 12;
     -fx-text-fill: -monet-on-surface;
@@ -2051,7 +2053,7 @@
 
 .addon-changelog .html-code-block {
     -fx-padding: 0 3 0 3;
-    -fx-background-radius: 5;
+    -fx-background-radius: 8;
     /* Should be -monet-surface-bright in dark mode and -dim in light mode, however that's not supported */
     -fx-background-color: -monet-surface-container;
 }

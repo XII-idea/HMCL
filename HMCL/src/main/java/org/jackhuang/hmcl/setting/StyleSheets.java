@@ -138,9 +138,14 @@ public final class StyleSheets {
 
     private static String getThemeStyleSheet() {
         final String blueCss = "/assets/css/blue.css";
+        final String miuixDarkCss = "/assets/css/miuix-dark.css";
 
-        if (ResolvedTheme.DEFAULT.equals(Themes.getTheme()))
-            return blueCss;
+        ResolvedTheme resolvedTheme = Themes.getTheme();
+        if (ThemeColor.DEFAULT.equals(resolvedTheme.primaryColorSeed())
+                && ResolvedTheme.DEFAULT.colorStyle().equals(resolvedTheme.colorStyle())
+                && ResolvedTheme.DEFAULT.contrast().equals(resolvedTheme.contrast())) {
+            return resolvedTheme.brightness() == Brightness.DARK ? miuixDarkCss : blueCss;
+        }
 
         ColorScheme scheme = Themes.getColorScheme();
 
